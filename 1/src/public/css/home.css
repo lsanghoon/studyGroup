@@ -1,0 +1,127 @@
+.nav-remote > a:hover, .nav-remote > a:focus {
+  color: #000;
+}
+#what, #we, #home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-position: center center;
+}
+#what {
+  background-image: url(../img/ser.jpg);
+}
+#we {
+  background-image: url(../img/ban.jpg);
+  margin-top: -1px;
+}
+#home {
+  background-image: url(../img/Camping-Near-The-Lake-Background-Wallpaper.jpg);
+}
+#home:before, #we:before, #what:before {
+  content: '';
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: inherit;
+  z-index: -1;
+}
+.home-title {
+  font-size: 8rem;
+  color: #fff;
+}
+.home-content {
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.5)
+}
+.notice-header {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.notice {
+  display: inline-block;
+  font-weight: 900;
+}
+.toNotice {
+  float: right;
+}
+.toNotice:hover {
+  color: #000;
+}
+.notice-content {
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  margin-bottom: 6.5px;
+  font-weight: 600;
+  color: #050505;
+  font-size: 1.1rem;
+}
+.notice-title {
+  margin-right: 10px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice-date {
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+
+.what-title, .we-title {
+  font-size: 6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.what-box {
+  height: 410px;
+  border-radius: 8px;
+  border: 1px solid #dbdbdb ;
+  background-color: #fff;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+.box-icon {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.box-icon i.um-group {
+  border-radius: 50%;
+  border: 35px solid #27a8d8;
+  background-color: #27a8d8;
+}
+.box-icon i.um-rocket {
+  border-radius: 50%;
+  border: 35px solid #a8d256;
+  background-color: #a8d256;
+}
+.box-icon i.um-road {
+  border-radius: 50%;
+  border: 35px solid #c53a5f;
+  background-color: #c53a5f;
+}
+.box-title {
+  margin-top: 30px;
+  text-align: center;
+  color: #6f6f6f;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.box-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  word-break: normal;
+  color: #6f6f6f;
+  font-size: 1.3em;
+}
+
+.card-container {
+  opacity: 0.9;
+}

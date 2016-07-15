@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>라우터 데모 엡</title>
+<!--  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">-->
+  <link href="lib/fontium/css/fontium.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/patientData.css" rel="stylesheet" type="text/css" />
+  
+  <script src="lib/jquery/jquery.js" type="text/javascript"></script>
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/angular-ui-router.js"></script>
+
+<!--  <script type="text/javascript" src="js/route.js"></script>-->
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="first">
+      <header class="profile">
+        <img src="img/profile_1.jpg" />
+        <span class="userName">이상훈</span>
+      </header>
+      <nav class="menu">
+        <ul>
+          <a ui-sref='deshBoard'><li id="1" class="select" onclick="menuSelector(this.id);">Deshboard</li></a>
+          <a href="#"><li id="2" onclick="menuSelector(this.id);">Hospital Inventory</li></a>
+          <a ui-sref='patientData'><li id="3" onclick="menuSelector(this.id);">Patient Data</li></a>
+          <a href="#"><li id="4" onclick="menuSelector(this.id);">Laboratorium</li></a>
+          <li></li>
+          <a href="#"><li id="5" onclick="menuSelector(this.id);">Account Settings</li></a>
+          <a href="#"><li id="6" onclick="menuSelector(this.id);">General Settings</li></a>
+          <a href="#"><li id="7" onclick="menuSelector(this.id);">User Access</li></a>
+          <li></li>
+          <a href="#"><li id="8" onclick="menuSelector(this.id);">Logout</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    <div ui-view class="contants">
+    
+    </div>
+    
+  </div>
+  
+<!--
+  <div class="first">
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+  </div>
+-->
+  
+  <div class="contain">
+  </div>
+  
+  
+  <script>
+    function menuSelector(id) {
+      var tagName = $("#" + id).get(0).tagName;
+      console.log(tagName);
+      
+      if (tagName == "LI") {
+        $("li").removeClass("select");
+        
+      } else if (tagName == "DIV") {
+        $("div").removeClass("select");
+        
+      }
+      $("#" + id).addClass("select");
+    }
+
+    function getInfo(id) {
+      console.log("getInfo : " + id);
+    }
+  </script>
+</body>
+</html>

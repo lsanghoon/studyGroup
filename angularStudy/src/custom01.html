@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script src="lib/jquery/jquery.js" type="text/javascript"></script>
+  <link href="lib/fontium/css/fontium.css" rel="stylesheet" type="text/css" />
+  <link href="css/custom01.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    
+    <div class="first">
+      <header class="profile">
+        <img src="img/profile_1.jpg" />
+        <span class="userName">이상훈</span>
+      </header>
+      <nav class="menu">
+        <ul>
+          <a href="#"><li id="1" class="select" onclick="menuSelector(this.id);">Deshboard</li></a>
+          <a href="#"><li id="2" onclick="menuSelector(this.id);">Hospital Inventory</li></a>
+          <a href="#"><li id="3" onclick="menuSelector(this.id);">Patient Data</li></a>
+          <a href="#"><li id="4" onclick="menuSelector(this.id);">Laboratorium</li></a>
+          <li></li>
+          <a href="#"><li id="5" onclick="menuSelector(this.id);">Account Settings</li></a>
+          <a href="#"><li id="6" onclick="menuSelector(this.id);">General Settings</li></a>
+          <a href="#"><li id="7" onclick="menuSelector(this.id);">User Access</li></a>
+          <li></li>
+          <a href="#"><li id="8" onclick="menuSelector(this.id);">Logout</li></a>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="secound">
+      <div class="patientData">
+        <header class="title">Patient Data</header>
+        
+        <div class="search">
+          <i class="fonti um-search"></i>
+          <input type="text" placeholder="Search patient..."/>
+        </div>
+        
+        <div class="items">
+          
+<!--          <a href="#">-->
+            <div role="button" id="i1" class="item" onclick="menuSelector(this.id);">
+              <img src="img/profile_2.jpg" />
+              <div class="info">
+                <div class="name">환자이름</div>
+                <div class="age">23 years old</div>
+                <div class="room">room 384A</div>
+              </div>
+            </div>
+<!--          </a>-->
+          
+          <a href="#">
+            <div id="i2" class="item select" onclick="menuSelector(this.id);">
+              <img class="itemImg" src="img/profile_2.jpg" />
+              <div class="info">
+                <div class="name">환자이름</div>
+                <div class="age">23 years old</div>
+                <div class="room">room 384A</div>
+              </div>
+            </div>
+          </a>
+          
+          <a href="#">
+            <div id="i3" class="item" onclick="menuSelector(this.id), getInfo(this.id);">
+              <img src="img/profile_2.jpg" />
+              <div class="info">
+                <div class="name">환자이름</div>
+                <div class="age">23 years old</div>
+                <div class="room">room 384A</div>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="final">
+      dd
+    </div>
+  </div>
+  
+  <script>
+    function menuSelector(id) {
+      var tagName = $("#" + id).get(0).tagName;
+      console.log(tagName);
+      
+      if (tagName == "LI") {
+        $("li").removeClass("select");
+        
+      } else if (tagName == "DIV") {
+        $("div").removeClass("select");
+        
+      }
+      $("#" + id).addClass("select");
+    }
+
+    function getInfo(id) {
+      console.log("getInfo : " + id);
+    }
+  </script>
+</body>
+</html>
