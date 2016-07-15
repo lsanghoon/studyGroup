@@ -1,0 +1,295 @@
+<div>
+  <div class="remote">
+    <ul class="nav-remote">
+      <a href="" ng-click="scrollTo('home')"><li>Title</li></a>
+      <a href="" ng-click="scrollTo('what')"><li>What?</li></a>
+      <a href="" ng-click="scrollTo('we')"><li>WeAre</li></a>
+    </ul>
+  </div>
+  <div id="home">
+    <div class="home-title">
+     Title
+    </div>
+    <div class="home-content">
+      <div class="notice-header">
+        <div class="notice">공지사항</div>
+        <a ui-sref="notice" class="toNotice"><i class="fonti um-plus"></i></a>
+      </div>
+      <div class="notices">
+        <div class="notice-content">
+          <span class="notice-title">공지사항제목111111111111111111111111111111111</span>
+          <span class="notice-date">2016/07/06</span>
+        </div>
+        <div class="notice-content">
+          <span class="notice-title">공지사항제목222222222222222222222222222222222222222222</span>
+          <span class="notice-date">2016/07/06</span>
+        </div>
+        <div class="notice-content">
+          <span class="notice-title">공지사항제목3333333333333333333333333333333333333333333</span>
+          <span class="notice-date">2016/07/06</span>
+        </div>
+        <div class="notice-content">
+          <span class="notice-title">공지사항제목444444444444444444444444444444444444444444444</span>
+          <span class="notice-date">2016/07/06</span>
+        </div>
+        <div class="notice-content">
+          <span class="notice-title">공지사항제목5555555555555555555555555555555555555555555555555</span>
+          <span class="notice-date">2016/07/06</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="what">
+    <div class="what-title">
+      What is this?
+    </div>
+    <div class="what-content">
+<!--      동아리 설명-->
+      <div class="what-box">
+        <div class="box-icon"><i class="fonti um-group um-3x"></i></div>
+        <div class="box-title">Group</div>
+        <div class="box-content">
+          Group info Group info Group info Group info Group info Group info Group info Group info Group info
+        </div>
+      </div>
+      <div class="what-box">
+        <div class="box-icon"><i class="fonti um-rocket um-3x"></i></div>
+        <div class="box-title">Activity</div>
+        <div class="box-content">
+          Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info Activity Info 
+        </div>
+      </div>
+      <div class="what-box">
+        <div class="box-icon"><i class="fonti um-road um-3x"></i></div>
+        <div class="box-title">Trip</div>
+        <div class="box-content">
+          Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info Trip Info 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="we">
+    <div class="we-title">
+      Join and Trip with us
+    </div>
+    <div class="we-card">
+      
+      <div class="card-container manual-flip">
+        <div class="card">
+          <div class="front">
+            <div class="cover">
+              <img src="img/rotating_card_thumb.png"/>
+            </div>
+            <div class="user">
+              <img class="img-circle" src="img/profile_7.jpg"/>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h3 class="name">이름</h3>
+                <p class="profession">직책</p>
+                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+              </div>
+              <div class="footer">
+                <button class="btn btn-simple" onclick="rotateCard(this)">
+                  <i class="fonti um-repeat"></i> 뒤로
+                </button>
+              </div>
+            </div>
+          </div> <!-- end front panel -->
+          <div class="back">
+            <div class="header">
+              <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h4 class="text-center">Job Description</h4>
+                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                <div class="stats-container">
+                  <div class="stats">
+                    <h4>235</h4>
+                    <p>
+                        Followers
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>114</h4>
+                    <p>
+                        Following
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>35</h4>
+                    <p>
+                        Projects
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="footer">
+              <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                <i class="fonti um-repeat"></i> 뒤로
+              </button>
+            </div>
+          </div> <!-- end back panel -->
+        </div> <!-- end card -->
+      </div> <!-- end card-container -->
+      
+      <div class="card-container manual-flip">
+        <div class="card">
+          <div class="front">
+            <div class="cover">
+              <img src="img/rotating_card_thumb.png"/>
+            </div>
+            <div class="user">
+              <img class="img-circle" src="img/profile_42.jpg"/>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h3 class="name">이름</h3>
+                <p class="profession">직책</p>
+                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+              </div>
+              <div class="footer">
+                <button class="btn btn-simple" onclick="rotateCard(this)">
+                  <i class="fonti um-repeat"></i> 뒤로
+                </button>
+              </div>
+            </div>
+          </div> <!-- end front panel -->
+          <div class="back">
+            <div class="header">
+              <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h4 class="text-center">Job Description</h4>
+                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                <div class="stats-container">
+                  <div class="stats">
+                    <h4>235</h4>
+                    <p>
+                        Followers
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>114</h4>
+                    <p>
+                        Following
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>35</h4>
+                    <p>
+                        Projects
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="footer">
+              <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                <i class="fonti um-repeat"></i> 뒤로
+              </button>
+            </div>
+          </div> <!-- end back panel -->
+        </div> <!-- end card -->
+      </div> <!-- end card-container -->
+      
+      <div class="card-container manual-flip">
+        <div class="card">
+          <div class="front">
+            <div class="cover">
+              <img src="img/rotating_card_thumb.png"/>
+            </div>
+            <div class="user">
+              <img class="img-circle" src="img/profile_44.jpg"/>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h3 class="name">이름</h3>
+                <p class="profession">직책</p>
+                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+              </div>
+              <div class="footer">
+                <button class="btn btn-simple" onclick="rotateCard(this)">
+                  <i class="fonti um-repeat"></i> 뒤로
+                </button>
+              </div>
+            </div>
+          </div> <!-- end front panel -->
+          <div class="back">
+            <div class="header">
+              <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h4 class="text-center">Job Description</h4>
+                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                <div class="stats-container">
+                  <div class="stats">
+                    <h4>235</h4>
+                    <p>
+                        Followers
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>114</h4>
+                    <p>
+                        Following
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>35</h4>
+                    <p>
+                        Projects
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="footer">
+              <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                <i class="fonti um-repeat"></i> 뒤로
+              </button>
+            </div>
+          </div> <!-- end back panel -->
+        </div> <!-- end card -->
+      </div> <!-- end card-container -->
+
+  </div>
+</div>
+
+  
+<script type="text/javascript">
+  $().ready(function(){
+    $('[rel="tooltip"]').tooltip();
+
+    $('a.scroll-down').click(function(e){
+      e.preventDefault();
+      scroll_target = $(this).data('href');
+       $('html, body').animate({
+         scrollTop: $(scroll_target).offset().top - 60
+       }, 1000);
+    });
+
+  });
+
+  function rotateCard(btn){
+    var $card = $(btn).closest('.card-container');
+    console.log($card);
+    if($card.hasClass('hover')){
+      $card.removeClass('hover');
+    } else {
+      $card.addClass('hover');
+    }
+  }
+</script>

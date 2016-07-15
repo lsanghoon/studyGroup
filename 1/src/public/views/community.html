@@ -1,0 +1,31 @@
+<div class="noti-container">
+  <div class="noti">
+    <h1 class="noti-cate-title">자유게시판</h1>
+    <div class="table">
+      <div class="column">
+        <div class="noti-cate">분류</div>
+        <div class="noti-title">제목</div>
+        <div class="noti-writer">작성자</div>
+        <div class="noti-date">작성일</div>
+      </div>
+      <div class="rows">
+        <div class="row" ng-repeat="todo in communityLists">
+          <div class="com-cate">{{todo.cate}}</div>
+          <a ui-sref="noticeList" class="com-title" role="button" ng-click="setCurrentPatients()">
+            {{todo.text}}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </a>
+          <div class="com-writer">{{todo.writer}}</div>
+          <div class="com-date">{{todo.date}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="paging">
+      <uib-pagination ng-model="communityPage" total-items="community.length" max-size="maxSize" boundary-links="true" class="pagination" first-text='<<' last-text='>>' next-text='>' previous-text='<'></uib-pagination>
+    </div>
+    
+    <div class="search">
+      <input id="noti-search" type="text" />
+      <button type="button" class="searchBtn"><i class="fonti um-search"></i></button>
+    </div>
+  </div>
+</div>
