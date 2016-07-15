@@ -1,1 +1,5 @@
-/WebServer/node_modules/
+/1/bower_components/
+/1/node_modules/
+/angularStudy/bower_components/
+/angularStudy/node_modules/
+/studyCheck/node_modules/
